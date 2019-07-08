@@ -1,0 +1,16 @@
+#ceasear cypher
+def cypher(text, rotate_value):
+    new_text = ""
+    for letter in text:
+        new_value = ord(letter) + rotate_value
+        letter = chr(new_value)
+        for x in letter:
+            #print(new_text)
+            new_text = new_text + letter 
+            #print(new_text)
+    return new_text
+
+text = input("Enter the text:\t")
+rotate_value = int(input("Enter the rotation value:\t")
+new_text = cypher("IBM",-1)
+print(new_text)
